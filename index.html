@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องคำนวณขนาดกลุ่มตัวอย่าง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>เครื่องคำนวณขนาดกลุ่มตัวอย่าง</h1>
+        <form id="sampleForm">
+            <label for="populationSize">ขนาดของประชากร (N):</label>
+            <input type="number" id="populationSize" placeholder="ใส่ขนาดของประชากร" required>
+
+            <label for="marginOfError">ค่าความคลาดเคลื่อน (e):</label>
+            <input type="number" id="marginOfError" placeholder="ใส่ค่าความคลาดเคลื่อน" step="0.01" required>
+
+            <button type="button" onclick="calculateSample()">คำนวณ</button>
+        </form>
+        <div id="result">
+            <h2>ขนาดกลุ่มตัวอย่างที่คำนวณได้ (n):</h2>
+            <p id="sampleSize">--</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
